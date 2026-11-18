@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline Whisper</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+      button, input { margin: 0.25rem 0.5rem 0.25rem 0; }
+      #output { white-space: pre-wrap; background: #f4f4f5; padding: 1rem; border-radius: 8px; min-height: 3rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Offline Whisper</h1>
+    <p>Runs on: <strong id="device">not loaded</strong></p>
+    <button id="load">Load model</button>
+    <input id="file" type="file" accept="audio/*" disabled />
+    <button id="record" disabled>Record</button>
+    <p id="status">Click "Load model" to download Whisper (cached after the first time).</p>
+    <div id="output"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

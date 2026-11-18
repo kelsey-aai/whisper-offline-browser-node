@@ -1,0 +1,19 @@
+{
+  "name": "whisper-offline-browser-node",
+  "version": "1.0.0",
+  "description": "Run OpenAI Whisper offline in the browser (WebGPU/WebAssembly) and in Node.js with Transformers.js",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "transcribe": "node node/transcribe.mjs",
+    "server": "node node/server.mjs",
+    "browser": "node serve.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.2"
+  },
+  "license": "MIT"
+}
